@@ -970,11 +970,9 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 20px;
 }
-
 .foot-box-1-text p {
   font-family: "Inria Serif", serif;
 }
-
 .foot-box2-link a:hover,
 .foot-box-1-text p:hover,
 .foot-box-1-em p:hover,
@@ -992,7 +990,44 @@ p {
     padding-right: 20px;
   }
 }
-
 .fo-inp{
   border-radius: 8px 50px 50px 8px !important;
+}
+@media(max-width:498px){
+  .f-a1{
+    width: 70px !important;
+  }
+  .f-a2{
+    width: 76px !important;
+  }
+  .f-a3{
+    width: 63px !important;
+  }
+  .f-a4{
+    width: 56px !important;
+  }
+  .f-a5{
+    width: 76px !important;
+  }
+  .f2-a{
+    width: 96px !important;
+  }
+  .f2-a2{
+    width: 125px !important;
+  }
+  .f2-a3{
+    width: 101px !important;
+  }
+  .f2-a4{
+    width: 60px !important;
+  }
+  .f2-a5{
+    width: 90px !important;
+  }
+  .foot-box-1-ph p{
+    width: 123px !important;
+  }
+  .foot-box-1-text p{
+    width: 157px !important;
+  }
 }
