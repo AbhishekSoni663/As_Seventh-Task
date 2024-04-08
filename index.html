@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Document</title>
+ 
+</head>
+
+<body>
+  <section
+    class="first-section bg-[url('./img/Frame.png')] xl:h-[850px] lg:h-[683px] md:h-[620px] bg-center bg-no-repeat"
+    style="background-size: 100% 100%">
+    <div class="xl:max-w-[70rem] lg:max-w-[65rem] mx-auto">
+      <nav class="border-gray-200">
+        <div class="container nav-cont mx-auto flex flex-wrap items-center justify-between pt-[1.9rem]">
+          <a href="#" class="flex">
+            <span class="logo-img self-center text-lg font-semibold whitespace-nowrap bg-[#D9D9D9] px-5 py-3"><img
+                src="./img/logo.png" alt="" class="w-full" />
+              <img src="./img/Frame (1).png" class="hidden frame-1 w-full" alt=""></span>
+          </a>
+
+          <button data-collapse-toggle="mobile-menu" type="button"
+            class="w-auto md:hidden ml-3 gap-4 text-[#D9A900] hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
+            aria-controls="mobile-menu-2" aria-expanded="false">
+            <span class="nav-icon-img flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M24 22.7448L17.296 16.0408C18.907 14.1067 19.7104 11.626 19.5389 9.11474C19.3675 6.60346 18.2345 4.25494 16.3756 2.55775C14.5168 0.86055 12.0751 -0.0546524 9.55864 0.00252659C7.04217 0.0597056 4.64462 1.08486 2.86474 2.86474C1.08486 4.64462 0.0597056 7.04217 0.00252659 9.55864C-0.0546524 12.0751 0.86055 14.5168 2.55775 16.3756C4.25494 18.2345 6.60346 19.3675 9.11474 19.5389C11.626 19.7104 14.1067 18.907 16.0408 17.296L22.7448 24L24 22.7448ZM1.80717 9.79659C1.80717 8.21643 2.27574 6.67176 3.15363 5.35791C4.03152 4.04405 5.2793 3.02003 6.73917 2.41533C8.19905 1.81063 9.80545 1.65241 11.3552 1.96069C12.905 2.26896 14.3286 3.02988 15.446 4.14722C16.5633 5.26456 17.3242 6.68814 17.6325 8.23793C17.9408 9.78773 17.7826 11.3941 17.1779 12.854C16.5732 14.3139 15.5491 15.5617 14.2353 16.4395C12.9214 17.3174 11.3767 17.786 9.79659 17.786C7.67838 17.7837 5.64761 16.9412 4.14981 15.4434C2.65202 13.9456 1.80952 11.9148 1.80717 9.79659Z"
+                  fill="#D9A900" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 12.0001C14.21 12.0001 16 10.2101 16 8.00012C16 5.79012 14.21 4.00012 12 4.00012C9.79 4.00012 8 5.79012 8 8.00012C8 10.2101 9.79 12.0001 12 12.0001ZM12 14.0001C9.33 14.0001 4 15.3401 4 18.0001V20.0001H20V18.0001C20 15.3401 14.67 14.0001 12 14.0001Z"
+                  fill="#D9A900" />
+              </svg>
+            </span>
+            <span class="sr-only">Open main menu</span>
+            <span class="open-menu-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <button id="close-toggle" data-collapse-toggle="mobile-menu" type="button"
+            class="hidden w-auto md:hidden ml-3 gap-3 text-[#D9A900] hover:text-gray-900 rounded-lg inline-flex items-center justify-center"
+            aria-controls="mobile-menu" aria-expanded="true">
+            <span class="close-menu-icon block flex justify-end px-2 py-2 items-center">
+              <i class="fa-solid fa-xmark text-2xl"></i>
+            </span>
+          </button>
+          <div class="hidden md:block w-full md:w-auto nav-ul-list" id="mobile-menu">
+            <button id="close-toggle" data-collapse-toggle="mobile-menu" type="button"
+              class="block  md:hidden  gap-3 text-[#D9A900] hover:text-black rounded-lg inline-flex items-center justify-center"
+              aria-controls="mobile-menu" aria-expanded="true">
+              <span class="close-menu-icon block w-full flex justify-end px-2 py-2 items-center">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+              </span>
+            </button>
+            <ul class="flex-col md:flex-row flex md:space-x-4 mt-4 md:mt-0 md:text-sm md:font-medium nav-ul">
+              <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                  class="text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0 font-bold flex items-center justify-between w-full md:w-auto">
+                  Categories
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar"
+                  class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4  nav-ul-drp">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+                  class="text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0 font-bold flex items-center justify-between w-full md:w-auto">
+                  Blogs
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar1"
+                  class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-full nav-ul-drp1">
+                  <ul class="py-1 w-full" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+                  class="font-bold text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0 flex items-center justify-between w-full md:w-auto">
+                  About
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar2"
+                  class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-full nav-ul-drp2">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+                  class="text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0 font-bold flex items-center justify-between w-full md:w-auto">
+                  Pages
+                  <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownNavbar3"
+                  class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-full nav-ul-drp3">
+                  <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Settings</a>
+                    </li>
+                    <li>
+                      <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Earnings</a>
+                    </li>
+                  </ul>
+                  <div class="py-1">
+                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Sign out</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#"
+                  class="text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0">Login</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="text-black hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-[#FF0000] md:p-0">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero-Section -->
+      <div class="hero-Section xl:h-[499px] lg:h-[376px] md:h-[318px] items-end flex mt-2 relative">
+        <div class="hero-flex flex flex-col justify-between xl:h-[20rem] md:h-[16rem] ps-2 relative z-10">
+          <h1
+            class="xl:text-7xl xl:min-h-[150px] md:min-h-[80px] lg:text-5xl md:text-4xl h-28 flex flex-col xl:w-3/7 text-black font-semibold">
+            Find Anything
+            <span class="xl:pt-2 lg:pt-2 md:pt-2 sm:pt-0 text-red">Around <span class="h-span-h1">You</span>.</span>
+          </h1>
+          <p class="xl:w-[500px] md:w-[450px] text-[#888888] font-semibold">
+            Posting an ad is free and easy – it only takes a few simple steps!
+            Select the right category and publish your classified ad for free
+          </p>
+          <div
+            class="hero-grid w-[635px] grid lg:grid-cols-3 xl:grid-cols-3 sm:grid-cols-1 xs:gird-cols-1 md:grid-cols-3 bg-white xl:gap-20 lg:gap-20 md:gap-20 sm:gap-0 ps-3 rounded-r-full">
+            <div
+              class="hero-col1 xl:py-3 lg:py-3 md:py-3 sm:py-0 relative xl:col-span-1 xl:w-[14rem] lg:w-[14rem] md:w-[14rem] sm:w-full xs-w-full">
+              <div class="hero-light absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                <svg class="hero-svg" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 23"
+                  fill="none">
+                  <path
+                    d="M11 0V3.00002H13V0H11ZM4.22265 2.8086L2.8086 4.22266L4.92969 6.34377L6.34375 4.9297L4.22265 2.8086ZM19.7774 2.8086L17.6562 4.9297L19.0702 6.34377L21.1914 4.22266L19.7774 2.8086ZM12 5.00001C8.14566 5.00001 4.99999 8.14569 4.99999 12C4.99999 14.7678 6.65612 17.1022 9 18.2344V21C9 22.0931 9.90695 23.0001 11 23.0001H13C14.0931 23.0001 15 22.0931 15 21V18.2344C17.3439 17.1022 19 14.7678 19 12C19 8.14569 15.8544 5.00001 12 5.00001ZM12 7.00002C14.7737 7.00002 17 9.22637 17 12C17 14.1844 15.6054 16.0229 13.666 16.7091L13 16.9434V21H11V16.9434L10.334 16.7091C8.39466 16.0229 7 14.1844 7 12C7 9.22637 9.22633 7.00002 12 7.00002ZM0 11V13H3V11H0ZM21 11V13H24V11H21ZM4.92969 17.6563L2.8086 19.7774L4.22265 21.1914L6.34375 19.0704L4.92969 17.6563ZM19.0702 17.6563L17.6562 19.0704L19.7774 21.1914L21.1914 19.7774L19.0702 17.6563Z"
+                    fill="black" />
+                </svg>
+                <svg class="hero-svg2 hidden" xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                  viewBox="0 0 25 24" fill="none">
+                  <rect x="0.832031" width="24" height="24" rx="2" fill="#F2F4F8" />
+                  <path
+                    d="M12.082 3V5.25001H13.582V3H12.082ZM6.99902 5.10645L5.93848 6.167L7.5293 7.75783L8.58985 6.69728L6.99902 5.10645ZM18.665 5.10645L17.0742 6.69728L18.1347 7.75783L19.7256 6.167L18.665 5.10645ZM12.832 6.75001C9.94128 6.75001 7.58203 9.10927 7.58203 12C7.58203 14.0759 8.82412 15.8267 10.582 16.6758V18.75C10.582 19.5698 11.2622 20.2501 12.082 20.2501H13.582C14.4018 20.2501 15.082 19.5698 15.082 18.75V16.6758C16.84 15.8267 18.0821 14.0759 18.0821 12C18.0821 9.10927 15.7228 6.75001 12.832 6.75001ZM12.832 8.25001C14.9123 8.25001 16.582 9.91977 16.582 12C16.582 13.6383 15.5361 15.0171 14.0815 15.5318L13.582 15.7076V18.75H12.082V15.7076L11.5825 15.5318C10.128 15.0171 9.08204 13.6383 9.08204 12C9.08204 9.91977 10.7518 8.25001 12.832 8.25001ZM3.83203 11.25V12.75H6.08203V11.25H3.83203ZM19.582 11.25V12.75H21.832V11.25H19.582ZM7.5293 16.2423L5.93848 17.833L6.99902 18.8935L8.58985 17.3028L7.5293 16.2423ZM18.1347 16.2423L17.0742 17.3028L18.665 18.8935L19.7256 17.833L18.1347 16.2423Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <select id="countries"
+                class="pl-8 xl:w-full lg:w-full md:w-full sm:w-full rounded-md bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Categories</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
+            </div>
+            <div
+              class="hero-col1 xl:py-3 lg:py-3 md:py-3 sm:py-0 relative col-span-1 xl:w-[14rem] lg:w-[14rem] md:w-[14rem] sm:w-full xs-w-full">
+              <div class="hero-loc absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" viewBox="0 0 18 26" fill="none"
+                  class="h-5 w-5 text-black hero-svg">
+                  <path
+                    d="M15.4829 12.1429C12.9115 18.1429 8.62577 25 8.62577 25C8.62577 25 4.34005 18.1429 1.76862 12.1429C-0.802804 6.14286 3.48291 1 8.62577 1C13.7686 1 18.0543 6.14286 15.4829 12.1429Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M8.62584 12.1429C10.5194 12.1429 12.0544 10.6079 12.0544 8.71434C12.0544 6.82079 10.5194 5.28577 8.62584 5.28577C6.73229 5.28577 5.19727 6.82079 5.19727 8.71434C5.19727 10.6079 6.73229 12.1429 8.62584 12.1429Z"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg class="hero-svg2 hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none">
+                  <rect width="24" height="24" rx="2" fill="#F2F4F8" />
+                  <path
+                    d="M17.6553 11.4286C15.941 15.4286 13.0838 20 13.0838 20C13.0838 20 10.2267 15.4286 8.51242 11.4286C6.79813 7.42857 9.65527 4 13.0838 4C16.5124 4 19.3696 7.42857 17.6553 11.4286Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M13.0845 11.4286C14.3469 11.4286 15.3703 10.4053 15.3703 9.14289C15.3703 7.88053 14.3469 6.85718 13.0845 6.85718C11.8222 6.85718 10.7988 7.88053 10.7988 9.14289C10.7988 10.4053 11.8222 11.4286 13.0845 11.4286Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <select id="countries"
+                class="pl-8 w-full rounded-md border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Location</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+              </select>
+            </div>
+            <div class="hero-col1 xl:py-3 lg:py-3 md:py-3 sm:py-0 relative ">
+              <button type="button"
+                class="relative items-center xl:w-[9rem] lg:w-[9rem] md:w-[9rem] sm:w-full xs-w-full flex cursor-default rounded-r-full  bg-[#FF0000] py-2.5 pl-3 pr-10 text-left text-gray-900   sm:text-sm sm:leading-6"
+                aria-haspopup="listbox" aria-expanded="true" aria-labelledby="listbox-label">
+                <span class="flex items-center">
+                  <span class="ml-1 block truncate text-1xl font-semibold text-white search-btn">Search</span>
+                </span>
+                <span class="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-[1.2rem] search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M24 22.7448L17.296 16.0408C18.907 14.1067 19.7104 11.626 19.5389 9.11474C19.3675 6.60346 18.2345 4.25494 16.3756 2.55775C14.5168 0.86055 12.0751 -0.0546525 9.55864 0.00252659C7.04217 0.0597056 4.64462 1.08486 2.86474 2.86474C1.08486 4.64462 0.0597056 7.04217 0.00252659 9.55864C-0.0546525 12.0751 0.86055 14.5168 2.55775 16.3756C4.25494 18.2345 6.60346 19.3675 9.11474 19.5389C11.626 19.7104 14.1067 18.907 16.0408 17.296L22.7448 24L24 22.7448ZM1.80717 9.79659C1.80717 8.21643 2.27574 6.67176 3.15363 5.35791C4.03152 4.04405 5.2793 3.02003 6.73917 2.41533C8.19905 1.81063 9.80545 1.65241 11.3552 1.96069C12.905 2.26896 14.3286 3.02988 15.446 4.14722C16.5633 5.26456 17.3242 6.68814 17.6325 8.23793C17.9408 9.78773 17.7826 11.3941 17.1779 12.854C16.5732 14.3139 15.5491 15.5617 14.2353 16.4395C12.9214 17.3174 11.3767 17.786 9.79659 17.786C7.67838 17.7837 5.64761 16.9412 4.14981 15.4434C2.65202 13.9456 1.80952 11.9148 1.80717 9.79659Z"
+                      fill="white" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-box2-img w-[50%]">
+          <img src="./img/Rectangle 43.png"
+            class="h-img-1 xl:max-w-[500px] lg:max-w-[400px] md:max-w-[340px] absolute xl:top-[94px] xl:right-[74px] lg:right-[105px] lg:top-[46px] md:right-[127px] md:top-[45px] z-0"
+            alt="" />
+          <img src="./img/Rectangle 42.png"
+            class="h-img-2 xl:max-w-[500px] lg:max-w-[400px] md:max-w-[340px] xl:mb-[-91px] lg:ms-[-70px] lg:mb-[-60px] xl:ms-[-18px] md:mb-[-90px] md:ms-[72px]"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Third-Section-->
+  <section class="third-section">
+    <div class="bg-white">
+      <div class="third-max max-w-6xl mx-auto px-4 py-8  sm:py-10 ">
+        <div class="third-head-icon flex justify-between items-center">
+          <h2 class="third-h2 text-[56px] font-bold tracking-tight">
+            Highes Rates
+          </h2>
+          <div class="th-h-icon flex gap-1">
+            <span class="th-icon-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+                <path
+                  d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="th-icon-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#D9A900" />
+                <path
+                  d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+                  fill="white" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="xl:mt-12 lg:mt-12 md:mt-8 sm:mt-10 mt-5 md:p-0 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 items-start">
+          <div
+            class="group px-2 relative flex flex-col items-center justify-around border border-1 border-[#FF0000] h-[450px] rounded-md">
+
+            <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+              <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+                class="rounded-full h-20 w-20 object-cover object-center" />
+              <h5 class="text-[20px]">ROBERT FOX</h5>
+              <h5 class="text-[20px]">magician</h5>
+              <p class="t-p flex gap-1 text-[20px] items-center">
+                <img src="./img/Star 1.png" alt="" />4.5
+                <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+              </p>
+              <div class="t-p-icon flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                  <path
+                    d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                    fill="#D9D9D9" />
+                  <path
+                    d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                    fill="#D9A900" />
+                </svg>
+                <h6>4.5</h6>
+              </div>
+            </div>
+            <div class="third-text-1 me-[48px] flex w-[189px]  justify-between">
+              <h5 class="text-[20px]  font-normal">Location</h5>
+              <h5 class="text-[20px] font-normal">Rate:</h5>
+            </div>
+            <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+              <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+              <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+            </div>
+            <button
+              class="third-btn flex mb-[20px] items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] font-normal">
+              View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" class="">
+                <path
+                  d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                  fill="#FF0000" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="group px-2 hidden sm:flex relative flex-col items-center justify-around border border-1 border-[#FF0000] h-[450px] rounded-md">
+            <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+              <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+                class="rounded-full h-20 w-20 object-cover object-center" />
+              <h5 class="text-[20px]">ROBERT FOX</h5>
+              <h5 class="text-[20px]">magician</h5>
+              <p class="t-p flex gap-1 text-[20px] items-center">
+                <img src="./img/Star 1.png" alt="" />4.5
+                <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+              </p>
+
+              <div class="t-p-icon flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                  <path
+                    d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                    fill="#D9D9D9" />
+                  <path
+                    d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                    fill="#D9A900" />
+                </svg>
+                <h6>4.5</h6>
+              </div>
+            </div>
+            <div class="third-text-1 me-[48px] flex w-[189px] justify-between">
+              <h5 class="text-[20px] font-normal">Location</h5>
+              <h5 class="text-[20px] font-normal">Rate:</h5>
+            </div>
+            <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+              <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+              <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+            </div>
+            <button
+              class="third-btn flex mb-[20px] items-center justify-center text-center gap-2 rounded-md  border border-1 border-[#FF0000] w-[240px] h-[40px]">
+              View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                  fill="#FF0000" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="group px-2 hidden sm:flex relative flex-col items-center justify-around border border-1 border-[#FF0000] h-[450px] rounded-md">
+            <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+              <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+                class="rounded-full h-20 w-20 object-cover object-center" />
+              <h5 class="text-[20px]">ROBERT FOX</h5>
+              <h5 class="text-[20px]">magician</h5>
+              <p class="t-p flex gap-1 text-[20px] items-center">
+                <img src="./img/Star 1.png" alt="" />4.5
+                <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+              </p>
+              <div class="t-p-icon flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                  <path
+                    d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                    fill="#D9D9D9" />
+                  <path
+                    d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                    fill="#D9A900" />
+                </svg>
+                <h6>4.5</h6>
+              </div>
+            </div>
+            <div class="third-text-1 me-[48px] flex w-[189px] justify-between">
+              <h5 class="text-[20px] font-normal">Location</h5>
+              <h5 class="text-[20px] font-normal">Rate:</h5>
+            </div>
+            <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+              <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+              <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+            </div>
+            <button
+              class="third-btn flex mb-[20px] items-center justify-center text-center gap-2 rounded-md    border border-1 border-[#FF0000] w-[240px] h-[40px]">
+              View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                  fill="#FF0000" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="group px-2 hidden sm:flex relative flex-col items-center justify-around border border-1 border-[#FF0000] h-[450px] rounded-md">
+            <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+              <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+                class="rounded-full h-20 w-20 object-cover object-center" />
+              <h5 class="text-[20px]">ROBERT FOX</h5>
+              <h5 class="text-[20px]">magician</h5>
+              <p class="t-p flex gap-1 text-[20px] items-center">
+                <img src="./img/Star 1.png" alt="" />4.5
+                <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+              </p>
+              <div class="t-p-icon flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                  <path
+                    d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                    fill="#D9A900" />
+                  <path
+                    d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                    fill="#D9D9D9" />
+                  <path
+                    d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                    fill="#D9A900" />
+                </svg>
+                <h6>4.5</h6>
+              </div>
+            </div>
+            <div class="third-text-1 me-[48px] flex w-[189px] justify-between">
+              <h5 class="text-[20px] font-normal">Location</h5>
+              <h5 class="text-[20px] font-normal">Rate:</h5>
+            </div>
+            <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+              <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+              <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+            </div>
+            <button
+              class="third-btn flex  items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] mb-[20px]">
+              View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                fill="none">
+                <path
+                  d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                  fill="#FF0000" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+  </section>
+
+  <!-- Swiper-Third-Section -->
+
+  <section class="third-swiper hidden px-5 pt-10 pb-8">
+    <div class="third-head-icon flex justify-between items-center pb-4">
+      <h2 class="third-h2 text-[56px] font-bold tracking-tight ">
+        Highes Rates
+      </h2>
+      <div class="th-h-icon flex gap-1">
+        <span class="th-icon-1 swiper-button-prev-customA">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+            <path
+              d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="th-icon-2 swiper-button-next-customB">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#D9A900" />
+            <path
+              d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+              fill="white" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <swiper-container class="swiper-container2">
+      <swiper-slide>
+        <div
+          class="group px-2 relative flex flex-col items-center justify-around border border-1 border-[#FF0000] h-[400px] rounded-md">
+
+          <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+            <img src="./img/Rectangle 4.png" alt="Front of men&#039;s Basic Tee in black."
+              class="rounded-full h-20 w-20 object-cover object-center" />
+            <h5 class="text-[20px]">ROBERT FOX</h5>
+            <h5 class="text-[20px]">magician</h5>
+            <p class="t-p flex gap-1 text-[20px] items-center">
+              <img src="./img/Star 1.png" alt="" />4.5
+              <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+            </p>
+            <div class="t-p-icon flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6>4.5</h6>
+            </div>
+          </div>
+          <div class="third-text-1 me-[48px] flex w-[189px]  justify-between">
+            <h5 class="text-[20px]  font-normal">Location</h5>
+            <h5 class="text-[20px] font-normal">Rate:</h5>
+          </div>
+          <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+            <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+            <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+          </div>
+          <button
+            class="third-btn flex  items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] font-normal">
+            View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              class="">
+              <path
+                d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                fill="#FF0000" />
+            </svg>
+          </button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div
+          class="group px-2 relative flex flex-col items-center justify-around border border-1 border-[#FF0000] h-[400px] rounded-md">
+
+          <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+            <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+              class="rounded-full h-20 w-20 object-cover object-center" />
+            <h5 class="text-[20px]">ROBERT FOX</h5>
+            <h5 class="text-[20px]">magician</h5>
+            <p class="t-p flex gap-1 text-[20px] items-center">
+              <img src="./img/Star 1.png" alt="" />4.5
+              <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+            </p>
+            <div class="t-p-icon flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6>4.5</h6>
+            </div>
+          </div>
+          <div class="third-text-1 me-[48px] flex w-[189px]  justify-between">
+            <h5 class="text-[20px]  font-normal">Location</h5>
+            <h5 class="text-[20px] font-normal">Rate:</h5>
+          </div>
+          <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+            <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+            <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+          </div>
+          <button
+            class="third-btn flex  items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] font-normal">
+            View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              class="">
+              <path
+                d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                fill="#FF0000" />
+            </svg>
+          </button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div
+          class="group px-2 relative flex flex-col items-center justify-around border border-1 border-[#FF0000] h-[400px] rounded-md">
+
+          <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+            <img src="./img/Rectangle 4.png" alt="Front of men&#039;s Basic Tee in black."
+              class="rounded-full h-20 w-20 object-cover object-center" />
+            <h5 class="text-[20px]">ROBERT FOX</h5>
+            <h5 class="text-[20px]">magician</h5>
+            <p class="t-p flex gap-1 text-[20px] items-center">
+              <img src="./img/Star 1.png" alt="" />4.5
+              <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+            </p>
+            <div class="t-p-icon flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6>4.5</h6>
+            </div>
+          </div>
+          <div class="third-text-1 me-[48px] flex w-[189px]  justify-between">
+            <h5 class="text-[20px]  font-normal">Location</h5>
+            <h5 class="text-[20px] font-normal">Rate:</h5>
+          </div>
+          <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+            <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+            <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+          </div>
+          <button
+            class="third-btn flex  items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] font-normal">
+            View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              class="">
+              <path
+                d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                fill="#FF0000" />
+            </svg>
+          </button>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div
+          class="group px-2 relative flex flex-col items-center justify-around border border-1 border-[#FF0000] h-[400px] rounded-md">
+
+          <div class="th-img-text h-52 flex flex-col justify-evenly items-center">
+            <img src="./img/Rectangle 6.png" alt="Front of men&#039;s Basic Tee in black."
+              class="rounded-full h-20 w-20 object-cover object-center" />
+            <h5 class="text-[20px]">ROBERT FOX</h5>
+            <h5 class="text-[20px]">magician</h5>
+            <p class="t-p flex gap-1 text-[20px] items-center">
+              <img src="./img/Star 1.png" alt="" />4.5
+              <span class="xl:text-[16px] sm:text-[14px]">(Reviews)</span>
+            </p>
+            <div class="t-p-icon flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6>4.5</h6>
+            </div>
+          </div>
+          <div class="third-text-1 me-[48px] flex w-[189px]  justify-between">
+            <h5 class="text-[20px]  font-normal">Location</h5>
+            <h5 class="text-[20px] font-normal">Rate:</h5>
+          </div>
+          <div class="third-text-2 flex gap-6 me-[33px] w-[270px]">
+            <h5 class="font-normal ps-8 text-[20px]">New York</h5>
+            <h5 class="text-[20px] font-normal">$ 25-35/ Hr</h5>
+          </div>
+          <button
+            class="third-btn flex  items-center justify-center text-center gap-2 rounded-md   border border-1 border-[#FF0000] w-[240px] h-[40px] font-normal">
+            View Profile <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              class="">
+              <path
+                d="M16.0008 8.4L7.10078 17.3C6.91745 17.4833 6.68411 17.575 6.40078 17.575C6.11745 17.575 5.88411 17.4833 5.70078 17.3C5.51745 17.1167 5.42578 16.8833 5.42578 16.6C5.42578 16.3167 5.51745 16.0833 5.70078 15.9L14.6008 7H7.00078C6.71745 7 6.48011 6.904 6.28878 6.712C6.09745 6.52 6.00145 6.28267 6.00078 6C6.00078 5.71667 6.09678 5.47933 6.28878 5.288C6.48078 5.09667 6.71811 5.00067 7.00078 5H17.0008C17.2841 5 17.5218 5.096 17.7138 5.288C17.9058 5.48 18.0014 5.71733 18.0008 6V16C18.0008 16.2833 17.9048 16.521 17.7128 16.713C17.5208 16.905 17.2834 17.0007 17.0008 17C16.7174 17 16.4801 16.904 16.2888 16.712C16.0974 16.52 16.0014 16.2827 16.0008 16V8.4Z"
+                fill="#FF0000" />
+            </svg>
+          </button>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <div class="w-full pb-2 pt-6 flex justify-center  items-center">
+      <button id="toggleProductsBtn"
+        class="third-btn-all-view w-[297px] h-[50px] text-[#D9A900] text-[20px] rounded-[5px]">All
+        View</button>
+    </div>
+  </section>
+  <!-- Section-Fourth -->
+  <section class="fourth-section max-w-6xl mx-auto  bg-white">
+    <div class="fourth-head px-4 pt-2">
+      <h4 class="text-[56px]  text-[#D9A900] font-bold">Categories</h4>
+    </div>
+    <div
+      class="pt-14 fourth-grid grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4">
+      <div class="fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900] h-[130px]">
+        <div class="fourth-img">
+          <img src="./img/Rectangle 5.png" alt="" class="object-cover  w-[100px] h-[100px] rounded-md">
+        </div>
+        <h6 class="ms-auto">development & it</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex  flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 6a.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">design & creative</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 5.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">Digital Marketing</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900] ] h-[130px]">
+        <img src="./img/Rectangle 6a.png" alt="" class="object-cover  w-[100px] h-[100px] rounded-md">
+        <h6 class="ms-auto text-nowrap ">writing & Translation</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 5.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">Music & Audio</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 6a.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">design & creative</h6>
+      </div>
+      <div
+        class="w-full fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 5.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">Digital Marketing</h6>
+      </div>
+      <div
+        class=" fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900]  h-[130px]">
+        <img src="./img/Rectangle 6a.png" alt="" class="object-cover  w-[100px] h-[100px]">
+        <h6 class="ms-auto">Digital Marketing</h6>
+      </div>
+    </div>
+    <div class="w-full pb-2 flex justify-center  items-center">
+      <button id="toggleProductsBtn1"
+        class="third-btn-all-view w-[297px] h-[50px] text-[#D9A900] text-[20px] rounded-[5px]">All
+        View</button>
+    </div>
+  </section>
+
+  <!-- Section-fifth -->
+
+  <section class="fifth-section max-w-6xl mx-auto  xl:py-14 md:py-8  ">
+    <div class="fifth-head px-4 flex justify-between items-center ">
+      <h3 class="text-[56px] font-bold">Latest Projects</h3>
+      <div class="th-h-icon flex gap-1">
+        <span class="th-icon-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+            <path
+              d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="th-icon-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#D9A900" />
+            <path
+              d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+              fill="white" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="fifth-grid grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 py-14 gap-x-5 gap-y-10 px-4">
+      <div class="card card-compact bg-base-100">
+        <figure><img src="./img/Rectangle 12.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h2 class="card-title font-normal">ROBERT FOX!</h2>
+          <p class="font-normal" class="font-normal">magician</p>
+          <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact">
+        <figure><img src="./img/Rectangle 13.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h2 class="card-title font-normal">ROBERT FOX!</h2>
+          <p class="font-normal">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r font-normal">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact">
+        <figure><img src="./img/Rectangle 14.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h2 class="card-title font-normal">ROBERT FOX!</h2>
+          <p class="font-normal">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact">
+        <figure><img src="./img/Rectangle 64.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h3 class="card-title font-normal">ROBERT FOX!</h3>
+          <p class="font-normal">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact">
+        <figure><img src="./img/Rectangle 67.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h3 class="card-title font-normal">ROBERT FOX!</h3>
+          <p class="font-normal">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact">
+        <figure><img src="./img/Rectangle 69.png" alt="Shoes" class="p-1 w-full" /></figure>
+        <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+          <h3 class="card-title font-normal">ROBERT FOX!</h3>
+          <p class="font-normal">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-medium">4.5</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sixth-Swiper-Sewction -->
+  <Section class="fifth-swiper hidden px-5 pb-8">
+    <div class="fifth-head  flex justify-between items-center pb-5">
+      <h3 class="text-[56px] font-bold">Latest Projects</h3>
+      <div class="th-h-icon flex gap-1">
+        <span class="th-icon-1 swiper-button-prev-copied">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+            <path
+              d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="th-icon-2 swiper-button-next-copied">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#D9A900" />
+            <path
+              d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+              fill="white" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <swiper-container class="swiper-container1">
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 12.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 13.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 14.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 64.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 67.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact bg-base-100">
+          <figure><img src="./img/Rectangle 69.png" alt="Shoes" class="p-1 w-full" /></figure>
+          <div class="card-body f-cr flex flex-col items-center justify-center py-3 gap-1">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal" class="font-normal">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-medium">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <div class="w-full pt-6 flex justify-center  items-center">
+      <button id="toggleProductsBtn"
+        class="third-btn-all-view w-[297px] h-[50px] text-[#D9A900] text-[20px] rounded-[5px]">All
+        View</button>
+    </div>
+  </Section>
+
+  <!-- Sixth-section -->
+
+  <sections class="sixth-swiper max-w-6xl mx-auto">
+    <swiper-container class="swiper-container3 max-w-6xl mx-auto" autoplay="false" loop="true" duration="3000" pagination="true">
+      <swiper-slide>
+        <div class="sixth-container px-4">
+          <div class="hero min-h-[auto]">
+            <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+              <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
+              <div class="sixth-text">
+                <h1 class="text-[56px] font-bold f-h1">Envato</h1>
+                <p class="py-6 max-w-[82%] text-[22px]  f-p font-medium">“ I have used freeio numerous times for several
+                  different
+                  companies. I have always had great eperiences. I onee
+                  tried using someone else and I ended up having to cancel
+                  the order move bace to freeio.”</p>
+                <p class="f-p1 text-[16px] font-medium">Courtney Henry</p>
+                <p class="f-p2 pt-2 text-[12px] font-normal">Project Manager</p>
+                <!-- <span class="sixth-dot pt-6 flex gap-1">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 2.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                </span> -->
+                <!-- <span class="sixth-dot2 pt-6 flex gap-1 hidden">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                </span> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="sixth-container px-4">
+          <div class="hero min-h-[auto]">
+            <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+              <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
+              <div class="sixth-text">
+                <h1 class="text-[56px] font-bold f-h1">Envato</h1>
+                <p class="py-6 max-w-[82%] text-[22px]  f-p font-medium">“ I have used freeio numerous times for several
+                  different
+                  companies. I have always had great eperiences. I onee
+                  tried using someone else and I ended up having to cancel
+                  the order move bace to freeio.”</p>
+                <p class="f-p1 text-[16px] font-medium">Courtney Henry</p>
+                <p class="f-p2 pt-2 text-[12px] font-normal">Project Manager</p>
+                <!-- <span class="sixth-dot pt-6 flex gap-1">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 2.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                </span> -->
+                <!-- <span class="sixth-dot2 pt-6 flex gap-1 hidden">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                </span> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="sixth-container px-4">
+          <div class="hero min-h-[auto]">
+            <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+              <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
+              <div class="sixth-text">
+                <h1 class="text-[56px] font-bold f-h1">Envato</h1>
+                <p class="py-6 max-w-[82%] text-[22px]  f-p font-medium">“ I have used freeio numerous times for several
+                  different
+                  companies. I have always had great eperiences. I onee
+                  tried using someone else and I ended up having to cancel
+                  the order move bace to freeio.”</p>
+                <p class="f-p1 text-[16px] font-medium">Courtney Henry</p>
+                <p class="f-p2 pt-2 text-[12px] font-normal">Project Manager</p>
+                <!-- <span class="sixth-dot pt-6 flex gap-1">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 2.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                </span> -->
+                <!-- <span class="sixth-dot2 pt-6 flex gap-1 hidden">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                </span> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="sixth-container px-4">
+          <div class="hero min-h-[auto]">
+            <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+              <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
+              <div class="sixth-text">
+                <h1 class="text-[56px] font-bold f-h1">Envato</h1>
+                <p class="py-6 max-w-[82%] text-[22px]  f-p font-medium">“ I have used freeio numerous times for several
+                  different
+                  companies. I have always had great eperiences. I onee
+                  tried using someone else and I ended up having to cancel
+                  the order move bace to freeio.”</p>
+                <p class="f-p1 text-[16px] font-medium">Courtney Henry</p>
+                <p class="f-p2 pt-2 text-[12px] font-normal">Project Manager</p>
+                <!-- <span class="sixth-dot pt-6 flex gap-1">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 2.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                </span> -->
+                <!-- <span class="sixth-dot2 pt-6 flex gap-1 hidden">
+                  <img src="./img/Ellipse 1.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                  <img src="./img/Ellipse 4.png" alt="">
+                  <img src="./img/Ellipse 3.png" alt="">
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <!-- <div class="custom-pagination flex justify-center gap-2">
+      <img src="./img/Ellipse 1.png" alt="" class="pagination-dot active">
+      <img src="./img/Ellipse 3.png" alt="" class="pagination-dot">
+      <img src="./img/Ellipse 4.png" alt="" class="pagination-dot">
+      <img src="./img/Ellipse 3.png" alt="" class="pagination-dot">
+    </div> -->
+    <!-- <span class="sixth-dot pt-6 flex gap-1">
+      <img src="./img/Ellipse 1.png" alt="">
+      <img src="./img/Ellipse 2.png" alt="">
+      <img src="./img/Ellipse 3.png" alt="">
+      <img src="./img/Ellipse 4.png" alt="">
+    </span> -->
+    <div class="w-full pb-2 flex justify-center  items-center">
+      <button id="toggleProductsBtn"
+        class="third-btn-all-view w-[297px] h-[50px] text-[#D9A900] text-[20px] rounded-[5px]">All
+        View</button>
+    </div>
+  </sections>
+
+  <!-- Seventh-Section -->
+  <section class="seventh-section max-w-6xl mx-auto px-4">
+    <div class="seventh-head flex justify-between items-center">
+      <h1 class="text-[56px] font-bold">Blog</h1>
+      <div class="th-h-icon flex gap-1 ">
+        <span class="th-icon-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+            <path
+              d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="th-icon-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#D9A900" />
+            <path
+              d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+              fill="white" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="seventh-grid grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3  py-12 gap-x-4 gap-y-6 ">
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 80.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+          <p class="font-normal" class="font-normal text-black">magician</p>
+          <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 81.png" alt="Shoes" class="object-cover objrct-center w-full sev-img" />
+        </figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+          <p class="font-normal" class="font-normal">magician</p>
+          <span class="fifth-txt text-center flex gap-1 text-black"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r text-black">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 82.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+          <p class="font-normal" class="font-normal text-black">magician</p>
+          <span class="fifth-txt text-center flex gap-1 text-black"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r text-black">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 83.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+          <p class="font-normal" class="font-normal text-black">magician</p>
+          <span class="fifth-txt text-center flex gap-1 text-black"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r text-black">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 83.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h3 class="card-title font-normal text-black">ROBERT FOX!</h3>
+          <p class="font-normal text-black">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 85.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h3 class="card-title font-normal text-black">ROBERT FOX!</h3>
+          <p class="font-normal text-black">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1 text-black"><img src="./img/Star 1.png" alt=""> 4.5
+            <span class="fifth-r text-black">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 86.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h3 class="card-title font-normal text-black">ROBERT FOX!</h3>
+          <p class="font-normal text-black">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+      <div class="card card-compact1">
+        <figure><img src="./img/Rectangle 87.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+        <div class="card-body flex flex-col pt-[3rem] pb-[3rem] items-center gap-2">
+          <h3 class="card-title font-normal text-black">ROBERT FOX!</h3>
+          <p class="font-normal text-black">magician</p>
+          <span class="fifth-txt font-normal text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+              class="fifth-r">(Reviews)</span></span>
+          <div class="t-p-icon flex gap-3 items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+              <path
+                d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                fill="#D9A900" />
+              <path
+                d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                fill="#D9D9D9" />
+              <path
+                d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                fill="#D9A900" />
+            </svg>
+            <h6 class="font-normal">4.5</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Seventh-Second-Carousel -->
+  <section class="seventh-swiper hidden px-5 pb-8 pt-3">
+    <div class="seventh-head flex justify-between items-center">
+      <h1 class="text-[56px] font-bold">Blog</h1>
+      <div class="th-h-icon flex gap-1 ">
+        <span class="th-icon-1 swiper-button-prev-custom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" transform="rotate(-180 12 12)" fill="#9A9A9A" />
+            <path
+              d="M9.21732 11.3334L17.334 11.3334V12.6667L9.21732 12.6667L12.9507 16.4L12.0007 17.3334L6.66732 12L12.0007 6.66671L12.9507 7.60004L9.21732 11.3334Z"
+              fill="white" />
+          </svg>
+        </span>
+        <span class="th-icon-2 swiper-button-next-custom">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#D9A900" />
+            <path
+              d="M14.7827 12.6666L6.66602 12.6666V11.3333L14.7827 11.3333L11.0493 7.59996L11.9993 6.66663L17.3327 12L11.9993 17.3333L11.0493 16.4L14.7827 12.6666Z"
+              fill="white" />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <swiper-container class="swiper-container ">
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 80.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 81.png" alt="Shoes" class="object-cover objrct-center w-full sev-img" />
+          </figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 82.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 83.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 83.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 85.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 86.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="card card-compact1">
+          <figure><img src="./img/Rectangle 87.png" alt="Shoes" class="object-cover w-full sev-img" /></figure>
+          <div class="card-body flex flex-col pt-[3rem] pb-[1rem] items-center gap-2">
+            <h2 class="card-title font-normal text-black">ROBERT FOX!</h2>
+            <p class="font-normal text-black">magician</p>
+            <span class="fifth-txt text-center flex gap-1"><img src="./img/Star 1.png" alt=""> 4.5 <span
+                class="fifth-r">(Reviews)</span></span>
+            <div class="t-p-icon flex gap-3 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="156" height="20" viewBox="0 0 156 20" fill="none">
+                <path
+                  d="M9.51056 0.977417L11.7557 7.88725H19.0211L13.1433 12.1578L15.3884 19.0676L9.51056 14.7971L3.63271 19.0676L5.87785 12.1578L0 7.88725H7.26542L9.51056 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M43.532 0.977417L45.7772 7.88725H53.0426L47.1648 12.1578L49.4099 19.0676L43.532 14.7971L37.6542 19.0676L39.8993 12.1578L34.0215 7.88725H41.2869L43.532 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M77.5535 0.977417L79.7987 7.88725H87.0641L81.1862 12.1578L83.4314 19.0676L77.5535 14.7971L71.6757 19.0676L73.9208 12.1578L68.043 7.88725H75.3084L77.5535 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M111.573 0.977417L113.818 7.88725H121.084L115.206 12.1578L117.451 19.0676L111.573 14.7971L105.695 19.0676L107.94 12.1578L102.062 7.88725H109.328L111.573 0.977417Z"
+                  fill="#D9A900" />
+                <path
+                  d="M145.595 0.977417L147.84 7.88725H155.105L149.227 12.1578L151.472 19.0676L145.595 14.7971L139.717 19.0676L141.962 12.1578L136.084 7.88725H143.349L145.595 0.977417Z"
+                  fill="#D9D9D9" />
+                <path
+                  d="M145.595 0.932373V7.8422V14.752L139.717 19.0225L141.962 12.1127L136.084 7.8422H143.349L145.595 0.932373Z"
+                  fill="#D9A900" />
+              </svg>
+              <h6 class="font-normal">4.5</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <div class="w-full pb-3 flex justify-center  items-center pt-4">
+      <button id="toggleProductsBtn"
+        class="third-btn-all-view w-[297px] h-[50px] text-[#D9A900] text-[20px] rounded-[5px]">All
+        View</button>
+    </div>
+  </section>
+
+  <!-- Eight Section -->
+  <section class="eight-section  bg-[#1F2130] min-h-[560px]">
+    <footer class="max-w-6xl mx-auto flex pt-14 flex-col justify-between min-h-full">
+      <div class="foot-grid1 px-4 grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1  gap-x-40 w-full">
+        <div class="foot-head xl:w-[590px] lg:w-[500px]">
+          <h4 class="text-[42px] text-white w-inherit">Don’t miss our weekly updates about freelancer career</h4>
+        </div>
+        <div class="foot-inp">
+          <div class="relative mt-5 w-fit">
+            <input type="text" name="price" id="price"
+              class="block fo-inp py-1.5 pl-3 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-black placeholder:text-[20px] placeholder:font-normal focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 h-[60px] xl:w-[500px] lg:w-[420px] md:w-[590px] sm:w-[500px]"
+              placeholder="Enter Your Email Address" ">
+            <div class=" absolute inset-y-0 right-0 flex items-center">
+            <button
+              class="foot-btn w-[150px] text-[20px] font-medium bg-[#D9A900] text-white h-[60px] rounded-r-full">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div
+        class="foot-grid2 grid px-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-auto sm:grid-cols-2 gap-x-4 gap-y-4 xl:pt-12 lg:pt-12 md:pt-12 sm:pt-8 py-4">
+        <div class="foot-box-1 w-max">
+          <div class="foot-logo bg-white max-w-[291px]   py-5 px-4 flex items-center justify-center">
+            <img src="./img/Frame (1).png" alt="">
+          </div>
+          <div class="foot-box-1-text pt-8 max-w-[231px]">
+            <p class="text-white text-[32px] w-[231px]">+88 029 345 702</p>
+          </div>
+          <div class="foot-box-1-em flex gap-4 text-white items-center pt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+              <path
+                d="M22.2857 0H1.71429C1.25963 0 0.823593 0.180612 0.502103 0.502103C0.180612 0.823593 0 1.25963 0 1.71429V15.4286C0 15.8832 0.180612 16.3193 0.502103 16.6408C0.823593 16.9622 1.25963 17.1429 1.71429 17.1429H22.2857C22.7404 17.1429 23.1764 16.9622 23.4979 16.6408C23.8194 16.3193 24 15.8832 24 15.4286V1.71429C24 1.25963 23.8194 0.823593 23.4979 0.502103C23.1764 0.180612 22.7404 0 22.2857 0ZM20.4 1.71429L12 7.52571L3.6 1.71429H20.4ZM1.71429 15.4286V2.49429L11.5114 9.27429C11.6549 9.37382 11.8254 9.42716 12 9.42716C12.1746 9.42716 12.3451 9.37382 12.4886 9.27429L22.2857 2.49429V15.4286H1.71429Z"
+                fill="white" />
+            </svg>
+            <p>Techlogo@gmail.com</p>
+          </div>
+          <div class="foot-box-1-ph flex gap-4 text-white items-center py-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M22.6 24C19.8222 24 17.0778 23.3947 14.3667 22.184C11.6556 20.9733 9.18889 19.2564 6.96667 17.0333C4.74445 14.8111 3.028 12.3444 1.81733 9.63333C0.606667 6.92222 0.000888889 4.17778 0 1.4C0 1 0.133333 0.666667 0.4 0.4C0.666667 0.133333 1 0 1.4 0H6.8C7.11111 0 7.38889 0.105778 7.63333 0.317333C7.87778 0.528889 8.02222 0.778667 8.06667 1.06667L8.93333 5.73333C8.97778 6.08889 8.96667 6.38889 8.9 6.63333C8.83333 6.87778 8.71111 7.08889 8.53333 7.26667L5.3 10.5333C5.74444 11.3556 6.272 12.1498 6.88267 12.916C7.49333 13.6822 8.16578 14.4213 8.9 15.1333C9.58889 15.8222 10.3111 16.4613 11.0667 17.0507C11.8222 17.64 12.6222 18.1787 13.4667 18.6667L16.6 15.5333C16.8 15.3333 17.0613 15.1836 17.384 15.084C17.7067 14.9844 18.0231 14.9564 18.3333 15L22.9333 15.9333C23.2444 16.0222 23.5 16.1836 23.7 16.4173C23.9 16.6511 24 16.912 24 17.2V22.6C24 23 23.8667 23.3333 23.6 23.6C23.3333 23.8667 23 24 22.6 24Z"
+                fill="white" />
+            </svg>
+            <p class="w-[136px]">(+68) 120034509</p>
+          </div>
+        </div>
+        <div class="foot-box-2 max-h-[200px]  xl:ms-[65px] lg:ms-[50px] md:ms-[65px]  max-w-36 sm:ms-[0px]">
+          <h4 class="text-white text-[32px]">Company</h4>
+          <div class="foot-box2-link flex-col flex gap-2 pt-4 h-full justify-between">
+            <a href="" class="text-white w-[93px]">About Us</a>
+            <a href="" class="text-white w-[106px] border-b[1px solid white]">Instructors</a>
+            <a href="" class="text-white w-[79px]">Careers</a>
+            <a href="" class="text-white w-[74px]">Service</a>
+            <a href="" class="text-white w-[110px]">Contact Us</a>
+          </div>
+        </div>
+        <div class="foot-box-3 max-h-[200px] max-w-48">
+          <h4 class="text-white text-[32px]">Categories</h4>
+          <div class="foot-box2-link flex-col flex gap-2 pt-4 justify-between h-full">
+            <a href="" class="text-white w-[138px]">UI/UX Desigin</a>
+            <a href="" class="text-white w-[180px]">Web Development</a>
+            <a href="" class="text-white w-[140px]">Data Sciences</a>
+            <a href="" class="text-white w-[87px]">Services</a>
+            <a href="" class="text-white w-[123px]">Art & Design</a>
+          </div>
+        </div>
+        <div class="foot-box-4 max-w-96 xl:ms-[-70px] lg:ms-[-60px] md:ms-[63px] sm:ms-[0px]">
+          <h4 class="text-white text-[32px]">Letest From Blogs</h4>
+          <div class="foot-box4-link flex-col flex gap-2 pt-4">
+            <div class="foot-box4-img flex gap-4">
+              <div class="foot-box4-i bg-white w-[100px] max-h-[100px] rounded-md">
+              </div>
+              <div
+                class="foot-box4-text xl:w-[288px] lg:w-[260px] md:w-[198px]  h-[89px] flex flex-col justify-between">
+                <p class="text-white">Education Turns Filthy Mind Into Open Mind</p>
+                <p class="flex gap-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                    viewBox="0 0 18 20" fill="none">
+                    <path
+                      d="M12 0H14V2H18V20H0V2H4V0H6V2H12V0ZM6 4H2V6H16V4H6ZM2 8V18H16V8H2ZM4 10H6V12H4V10ZM10 10H8V12H10V10ZM12 10H14V12H12V10ZM6 14H4V16H6V14ZM8 14H10V16H8V14ZM14 14H12V16H14V14Z"
+                      fill="white" />
+                  </svg>25 Mar 2024</p>
+              </div>
+            </div>
+            <div class="foot-box4-img flex gap-4 pt-1 w-full">
+              <div class="foot-box4-i bg-white w-[100px] max-h-[100px] rounded-md">
+              </div>
+              <div
+                class="foot-box4-text  xl:w-[288px] lg:w-[260px] md:w-[198px] h-[89px] flex flex-col justify-between">
+                <p class="text-white">Education Turns Filthy Mind Into Open Mind</p>
+                <p class="flex gap-2 text-white"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20"
+                    viewBox="0 0 18 20" fill="none">
+                    <path
+                      d="M12 0H14V2H18V20H0V2H4V0H6V2H12V0ZM6 4H2V6H16V4H6ZM2 8V18H16V8H2ZM4 10H6V12H4V10ZM10 10H8V12H10V10ZM12 10H14V12H12V10ZM6 14H4V16H6V14ZM8 14H10V16H8V14ZM14 14H12V16H14V14Z"
+                      fill="white" />
+                  </svg>25 Mar 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="foot-border border border-1 border-white"></div>
+      <div
+        class="foot-last grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-full items-center py-5 gap-y-6">
+        <div class="foot-last-box flex xl:gap-3  lg:gap-3  md:gap-3 sm:gap-3 items-center ps-3 flex-wrap">
+          <div class="flex foot-svg-txt gap-2 items-center ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M1 8C1 9.85652 1.7375 11.637 3.05025 12.9497C4.36301 14.2625 6.14348 15 8 15C9.85652 15 11.637 14.2625 12.9497 12.9497C14.2625 11.637 15 9.85652 15 8C15 6.14348 14.2625 4.36301 12.9497 3.05025C11.637 1.7375 9.85652 1 8 1C6.14348 1 4.36301 1.7375 3.05025 3.05025C1.7375 4.36301 1 6.14348 1 8ZM16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM8.146 4.992C6.934 4.992 6.219 5.912 6.219 7.494V8.554C6.219 10.125 6.922 11.016 8.146 11.016C9.125 11.016 9.787 10.43 9.875 9.598H11.17V9.691C11.07 11.139 9.816 12.158 8.14 12.158C6.049 12.158 4.871 10.822 4.871 8.555V7.482C4.871 5.221 6.072 3.844 8.141 3.844C9.822 3.844 11.076 4.898 11.17 6.416V6.504H9.875C9.787 5.625 9.107 4.992 8.146 4.992Z"
+                fill="white" />
+            </svg>
+            <p class="text-white text-sm"><span class="lech">LECH</span>LOGO</p>
+            <p class="text-white text-sm">Design by them evillage.</p>
+          </div>
+          <p class="text-white fo-rev text-sm">All Rights Reserved.</p>
+        </div>
+        <div class="foot-last-icon flex xl:ms-auto lg:ms-auto md:ms-auto gap-x-5 pe-5 ps-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M16 8.02005C16 3.59298 12.416 0 8 0C3.584 0 0 3.59298 0 8.02005C0 11.9018 2.752 15.1338 6.4 15.8797V10.4261H4.8V8.02005H6.4V6.01504C6.4 4.46717 7.656 3.20802 9.2 3.20802H11.2V5.61404H9.6C9.16 5.61404 8.8 5.97494 8.8 6.41604V8.02005H11.2V10.4261H8.8V16C12.84 15.599 16 12.1825 16 8.02005Z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M4.64 0H11.36C13.92 0 16 2.08 16 4.64V11.36C16 12.5906 15.5111 13.7708 14.641 14.641C13.7708 15.5111 12.5906 16 11.36 16H4.64C2.08 16 0 13.92 0 11.36V4.64C0 3.4094 0.488856 2.22919 1.35902 1.35902C2.22919 0.488856 3.4094 0 4.64 0ZM4.48 1.6C3.71618 1.6 2.98364 1.90343 2.44353 2.44353C1.90343 2.98364 1.6 3.71618 1.6 4.48V11.52C1.6 13.112 2.888 14.4 4.48 14.4H11.52C12.2838 14.4 13.0164 14.0966 13.5565 13.5565C14.0966 13.0164 14.4 12.2838 14.4 11.52V4.48C14.4 2.888 13.112 1.6 11.52 1.6H4.48ZM12.2 2.8C12.4652 2.8 12.7196 2.90536 12.9071 3.09289C13.0946 3.28043 13.2 3.53478 13.2 3.8C13.2 4.06522 13.0946 4.31957 12.9071 4.50711C12.7196 4.69464 12.4652 4.8 12.2 4.8C11.9348 4.8 11.6804 4.69464 11.4929 4.50711C11.3054 4.31957 11.2 4.06522 11.2 3.8C11.2 3.53478 11.3054 3.28043 11.4929 3.09289C11.6804 2.90536 11.9348 2.8 12.2 2.8ZM8 4C9.06087 4 10.0783 4.42143 10.8284 5.17157C11.5786 5.92172 12 6.93913 12 8C12 9.06087 11.5786 10.0783 10.8284 10.8284C10.0783 11.5786 9.06087 12 8 12C6.93913 12 5.92172 11.5786 5.17157 10.8284C4.42143 10.0783 4 9.06087 4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4ZM8 5.6C7.36348 5.6 6.75303 5.85286 6.30294 6.30294C5.85286 6.75303 5.6 7.36348 5.6 8C5.6 8.63652 5.85286 9.24697 6.30294 9.69706C6.75303 10.1471 7.36348 10.4 8 10.4C8.63652 10.4 9.24697 10.1471 9.69706 9.69706C10.1471 9.24697 10.4 8.63652 10.4 8C10.4 7.36348 10.1471 6.75303 9.69706 6.30294C9.24697 5.85286 8.63652 5.6 8 5.6Z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path
+              d="M16 1.88235C15.4111 2.21176 14.7763 2.42824 14.1185 2.53176C14.7916 2.03294 15.3117 1.24235 15.5564 0.291765C14.9216 0.762353 14.218 1.09176 13.4761 1.28C12.8719 0.470588 12.0229 0 11.0593 0C9.26195 0 7.7935 1.80706 7.7935 4.03765C7.7935 4.35765 7.82409 4.66824 7.87763 4.96C5.15488 4.79059 2.7304 3.18118 1.11663 0.743529C0.833652 1.33647 0.67304 2.03294 0.67304 2.76706C0.67304 4.16941 1.24665 5.41176 2.13384 6.11765C1.59082 6.11765 1.08604 5.92941 0.642448 5.64706V5.67529C0.642448 7.63294 1.77438 9.27059 3.27342 9.63765C2.79214 9.79973 2.28688 9.82228 1.79732 9.70353C2.00505 10.5059 2.41188 11.2079 2.96062 11.711C3.50937 12.2141 4.17243 12.4929 4.8566 12.5082C3.69685 13.6381 2.25927 14.2488 0.780115 14.24C0.520077 14.24 0.260038 14.2212 0 14.1835C1.45316 15.3318 3.18164 16 5.03251 16C11.0593 16 14.3709 9.84471 14.3709 4.50824C14.3709 4.32941 14.3709 4.16 14.3633 3.98118C15.0057 3.41647 15.5564 2.70118 16 1.88235Z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path
+              d="M2.64103 4.28205C3.54734 4.28205 4.28205 3.54734 4.28205 2.64103C4.28205 1.73471 3.54734 1 2.64103 1C1.73471 1 1 1.73471 1 2.64103C1 3.54734 1.73471 4.28205 2.64103 4.28205Z"
+              stroke="white" stroke-width="2" />
+            <path
+              d="M1 6.74365H4.28205V17.0001H1V6.74365ZM7.5641 10.6411V17.0001H10.4359V11.2565C10.4359 10.2308 11.0513 9.41032 12.0769 9.41032C13.1026 9.41032 13.7179 10.436 13.7179 11.2565V17.0001H16.5897V10.6411C16.5897 9.41032 15.1538 6.74365 12.0769 6.74365C9 6.74365 7.5641 9.41032 7.5641 10.6411Z"
+              stroke="white" stroke-width="2" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleProductsBtn = document.getElementById("toggleProductsBtn");
+      const products = document.querySelectorAll(".third-section .grid > div:not(:first-child)");
+
+      toggleProductsBtn.addEventListener("click", function () {
+        products.forEach(product => {
+          product.classList.toggle("hidden", window.innerWidth >= 768); // Hide products if window width is >= 768px
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.getElementById("toggleProductsBtn1");
+      const cards = document.querySelectorAll(".fourth-box-1");
+
+      if (window.innerWidth <= 768) { // Execute only on mobile devices
+        // Initially, hide all cards except the first one
+        cards.forEach((card, index) => {
+          if (index !== 0) {
+            card.style.display = "none";
+          }
+        });
+
+        let isAllView = false;
+
+        toggleButton.addEventListener("click", function () {
+          isAllView = !isAllView;
+          if (isAllView) {
+            // Show all cards
+            cards.forEach(card => card.style.display = "flex");
+            toggleButton.textContent = "Single View";
+          } else {
+            // Show only one card
+            cards.forEach((card, index) => {
+              card.style.display = (index === 0) ? "flex" : "none";
+            });
+            toggleButton.textContent = "All View";
+          }
+        });
+      } else {
+        toggleButton.style.display = "none"; // Hide the button on desktop devices
+      }
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiperEl = document.querySelector('.swiper-container')
+    Object.assign(swiperEl, {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      loop: true,
+      pagination: false,
+      navigation: {
+        nextEl: '.swiper-button-next-custom',
+        prevEl: '.swiper-button-prev-custom',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+      },
+    });
+    swiperEl.initialize();
+  </script>
+  
+  <script>
+    const copiedswiperEl = document.querySelector('.swiper-container1')
+    Object.assign(copiedswiperEl, {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      loop: true,
+      pagination: false,
+      navigation: {
+        nextEl: '.swiper-button-next-copied',
+        prevEl: '.swiper-button-prev-copied',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+        1460: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
+    copiedswiperEl.initialize();
+  </script>
+  <!-- <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      autoplay: {
+        delay: 3000,
+      },
+      loop: true,
+      // Disable default pagination
+      pagination: {
+        el: '.custom-pagination',
+        clickable: true
+      },
+    });
+
+    // Custom pagination functionality
+    const paginationDots = document.querySelectorAll('.pagination-dot');
+    paginationDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        swiper.slideTo(index); // Navigate to corresponding slide
+        updatePagination(index); // Update pagination dots
+      });
+    });
+
+    function updatePagination(index) {
+      paginationDots.forEach((dot, i) => {
+        dot.classList.remove('active');
+        if (i === index) {
+          dot.classList.add('active');
+        }
+      });
+    }
+  </script -->
+  <script>
+    const copiedswiperTwoEl = document.querySelector('.swiper-container2')
+    Object.assign(copiedswiperTwoEl, {
+      slidesPerView: 3,
+      spaceBetween: 40,
+      loop: true,
+      pagination: false,
+      navigation: {
+        nextEl: '.swiper-button-next-customB',
+        prevEl: '.swiper-button-prev-customA',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+        1460: {
+          slidesPerView: 5,
+          spaceBetween: 10,
+        },
+      },
+    });
+    copiedswiperTwoEl.initialize();
+  </script>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeToggle = document.getElementById('close-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.remove('hidden');
+      menuToggle.classList.add('hidden');
+      closeToggle.classList.remove('hidden');
+    });
+
+    closeToggle.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+      menuToggle.classList.remove('hidden');
+      closeToggle.classList.add('hidden');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+  <script src="https://kit.fontawesome.com/fd34e350c0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
