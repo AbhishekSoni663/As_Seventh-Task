@@ -230,6 +230,7 @@
 
   .hero-col1 button {
     width: 100%;
+    margin-bottom: 10px;
     background-color: #d9a900;
     border-radius: 5px, 57px, 57px, 5px;
     box-shadow: 4px 4px 50px 0px #b9b9b926;
@@ -798,7 +799,7 @@ p {
 }
 
 .card-compact:hover {
-  box-shadow: -2px 2px 25px 0px #ff000040;
+  box-shadow: -2px 2px 25px 0px #FF000040;
 }
 
 .card-compact1 .card-body {
@@ -811,14 +812,17 @@ p {
 
 .card-compact h2 {
   font-family: "Inria Serif", serif;
+  font-size: 20px;
 }
 
 .card-compact h3 {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 .card-compact p {
   font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 .card-compact1 h2 {
