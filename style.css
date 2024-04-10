@@ -213,8 +213,10 @@
   }
 
   .hero-col1 button {
+    width: 100%;
     background-color: #d9a900;
     border-radius: 5px, 57px, 57px, 5px;
+    box-shadow: 4px 4px 50px 0px #B9B9B926;
   }
 
   .third-h2,
@@ -271,9 +273,9 @@
     width: 550px;
   }
 
-  .hero-col1 select,
-  button {
+  .hero-col1 select{
     width: 100%;
+    box-shadow: 0px 4px 25px 0px #9D9D9D40;
   }
 
   .hero-flex p {
