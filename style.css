@@ -381,7 +381,8 @@
   .third-btn-all-view {
     margin-top: 20px !important;
     width: 72% !important;
-  }
+    margin-bottom: 10px;
+}
 }
 
 @media (max-width: 1024px) {
