@@ -798,12 +798,12 @@
     </div>
   </section>
   <!-- Section-Fourth -->
-  <section class="fourth-section max-w-6xl mx-auto  bg-white">
+  <section class="fourth-section max-w-6xl  mx-auto  bg-white">
     <div class="fourth-head px-4 pt-2">
       <h4 class="text-[56px]  text-[#D9A900] font-bold">Categories</h4>
     </div>
     <div
-      class="pt-14 fourth-grid grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4">
+      class="pt-14 fourth-grid grid grid-cols-1 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 max-w-[1411px]">
       <div class="fourth-box-1 px-2 rounded-md flex flex-row items-center  border border-1 border-[#D9A900] h-[130px]">
         <div class="fourth-img">
           <img src="./img/Rectangle 5.png" alt="" class="object-cover  w-[100px] h-[100px] rounded-md">
@@ -1317,7 +1317,7 @@
     <swiper-slide>
       <div class="sixth-container px-4">
         <div class="hero min-h-[auto]">
-          <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+          <div class="hero-content flex justify-between flex-col-reverse md:flex-row-reverse">
             <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
             <div class="sixth-text">
               <h1 class="text-[56px] font-bold f-h1">Envato</h1>
@@ -1349,7 +1349,7 @@
     <swiper-slide>
       <div class="sixth-container px-4">
         <div class="hero min-h-[auto]">
-          <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+          <div class="hero-content flex justify-between flex-col-reverse md:flex-row-reverse">
             <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
             <div class="sixth-text">
               <h1 class="text-[56px] font-bold f-h1">Envato</h1>
@@ -1381,7 +1381,7 @@
     <swiper-slide>
       <div class="sixth-container px-4">
         <div class="hero min-h-[auto]">
-          <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+          <div class="hero-content flex justify-between flex-col-reverse md:flex-row-reverse">
             <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
             <div class="sixth-text">
               <h1 class="text-[56px] font-bold f-h1">Envato</h1>
@@ -1413,7 +1413,7 @@
     <swiper-slide>
       <div class="sixth-container px-4">
         <div class="hero min-h-[auto]">
-          <div class="hero-content flex justify-between flex-col md:flex-row-reverse">
+          <div class="hero-content flex justify-between flex-col-reverse md:flex-row-reverse">
             <img src="./img/Rectangle 91.png" class="max-w-sm rounded-sm sixth-img1" />
             <div class="sixth-text">
               <h1 class="text-[56px] font-bold f-h1">Envato</h1>
@@ -2391,12 +2391,74 @@
       background: rgba(0, 0, 0, 0.2);
     }
    
-    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-height:11px;
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 120px;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 10%;
+    height:11px;
+}
+@media(max-width:1024px){
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    // position:absolute;   
+     bottom: auto;  
+     top: 259px;    
+     left: 0;     
+     right: 0;    
+     width: 11%; 
+  }
 }
 
+@media(max-width:998px){
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    // position:absolute;
+    bottom: auto;
+    top: 259px;
+    left: 0;
+    right: 0;
+    width: 11%;
+}
+}
 
-
+@media(max-width:768px){
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: auto;
+    top: 247px;
+    left: 0 ;
+    right: 0;
+    width: 15%;
+}
+}
+@media(max-width:767px){
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 8px;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+}
+// @media(max-width:598px){
+//   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+//     bottom: 7px;
+//     top: auto;
+//     left: 0;
+//     right: 0;
+//     width: 22%;
+// }
+// }
+// @media(max-width:498px){
+//   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+//     bottom: 7px;
+//     top: auto;
+//     left: 0;
+//     right: 0;
+//     width: 100%;
+// }
+// }
 
     .swiper-pagination-bullet-active {
       color: #fff;
