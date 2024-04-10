@@ -122,12 +122,14 @@
     position: absolute !important;
     inset: 0px auto auto 0px;
     margin: 0px;
+    width: 100% !important;
     transform: translate3d(0px, 144px, 0px) !important;
   }
 
   .nav-ul-drp2 {
     position: absolute !important;
     inset: 0px auto auto 0px;
+    width: 100% !important;
     margin: 0px;
     transform: translate3d(0px, 188px, 0px) !important;
   }
@@ -136,6 +138,7 @@
     position: absolute;
     inset: 0px auto auto 0px;
     margin: 0px;
+    width: 100% !important;
     transform: translate3d(0px, 231px, 0px) !important;
   }
 
