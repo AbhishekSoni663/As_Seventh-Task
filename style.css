@@ -101,7 +101,7 @@
   .group {
     display: flex;
   }
-
+  
   .fourth-box-1 h6 {
     font-size: 15px !important;
     width: fit-content;
@@ -776,6 +776,7 @@ p {
   font-size: 15px;
   font-family: "Inter", sans-serif;
   width: fit-content;
+  font-weight: 400;
 }
 
 .fourth-head h4 {
