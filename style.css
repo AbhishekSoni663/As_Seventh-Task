@@ -841,40 +841,43 @@
 
 .card-compact h2 {
   font-family: "Inria Serif", serif;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .card-compact h3 {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .card-compact p {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   padding-top: 5px;
 }
 
 .card-compact1 h2 {
+  font-size: 19px;
   font-family: "Inria Serif", serif;
 }
 
 .card-compact1 h3 {
+  font-size: 19px;
   font-family: "Inter", sans-serif;
 }
 
 .card-compact1 p {
+  font-size: 19px;
   font-family: "Inter", sans-serif;
 }
 
 .fifth-txt {
-  font-size: 20px;
+  font-size: 19px;
   font-family: "Inter", sans-serif;
   align-items: center;
 }
 
 .fifth-r {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .fifth-head h3 {
