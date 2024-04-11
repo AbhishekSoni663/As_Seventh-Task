@@ -667,7 +667,7 @@
   padding-top: 5px !important;
 }
 .t-p-icon7{
-  padding-top: 5px;
+  padding-top: 2px;
 }
   .hidden {
     display: none;
@@ -749,8 +749,7 @@
   color: #ff0000;
 }
 
-.th-img-text h5,
-p {
+.th-img-text h6, .th-text h5 , .t-p {
   font-family: "Inter", sans-serif;
 }
 
