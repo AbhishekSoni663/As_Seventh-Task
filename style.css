@@ -365,6 +365,9 @@
   .hero-col1 {
     width: 370px !important;
   }
+  .third-text-2{
+    width: 233px !important;
+  }
 }
 
 @media (max-width: 398px) {
@@ -414,13 +417,10 @@
 
   .third-text-1 {
     width: 150px !important;
-    margin-left: 7px;
   }
 
   .third-text-2 {
-    width: 204px;
-    margin-left: 46px;
-    margin-right: 0px;
+    width: 194px;
   }
 
   .third-btn {
@@ -611,7 +611,9 @@
   .nav-cont {
     padding: 10px 20px !important;
   }
-
+  .third-text-2{
+    width: 233px !important;
+  }
   .logo-img img {
     display: none;
   }
@@ -751,17 +753,12 @@ p {
 @media (max-width: 1098px) {
   .third-text-1 {
     width: 150px !important;
-    margin-left: 7px;
+    /* margin-left: 7px; */
   }
 
-  .third-text-2 {
-    width: 301px;
-    margin-left: 46px;
-    margin-right: 0px;
-}
 
   .third-btn {
-    width: 190px !important;
+    width: 205px !important;
   }
 
   .third-h2 {
@@ -830,6 +827,7 @@ p {
 .card-compact p {
   font-family: "Inter", sans-serif;
   font-size: 20px;
+  padding-top: 5px;
 }
 
 .card-compact1 h2 {
