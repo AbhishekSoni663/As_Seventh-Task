@@ -285,9 +285,10 @@
   .hero-flex h1 {
     width: 100%;
     padding-left: 12px;
-    font-size: 33px;
+    font-size: 32px;
+    padding-top: 10px;
     letter-spacing: 1px;
-  }
+}
 
   .hero-col1 {
     width: 550px;
